@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?scenebuilder-stylesheet style.css?>
+
+<AnchorPane prefHeight="230.0" prefWidth="200.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="pta.controller.PreferencesController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <fx:define>
+      <ToggleGroup fx:id="heightGroup" />
+      <ToggleGroup fx:id="weightGroup" />
+    </fx:define>
+    <Label layoutX="14.0" layoutY="14.0" text="Preferences">
+      <font>
+        <Font size="16.0" />
+      </font>
+    </Label>
+    <RadioButton fx:id="fxHeightSelectionMetres" layoutX="34.0" layoutY="63.0" mnemonicParsing="false" selected="true" text="Meters" toggleGroup="$heightGroup" />
+    <RadioButton fx:id="fxHeightSelectionFeet" layoutX="34.0" layoutY="84.0" mnemonicParsing="false" text="Feet" toggleGroup="$heightGroup" />
+    <Label layoutX="14.0" layoutY="43.0" text="Height values:" />
+    <RadioButton fx:id="fxWeightSelectionKilograms" layoutX="34.0" layoutY="132.0" mnemonicParsing="false" selected="true" text="Kilograms" toggleGroup="$weightGroup" />
+    <RadioButton fx:id="fxWeightSelectionPounds" layoutX="34.0" layoutY="153.0" mnemonicParsing="false" text="Pounds" toggleGroup="$weightGroup" />
+    <Label layoutX="14.0" layoutY="112.0" text="Weight values:" />
+    <Button onAction="#SavePreferencesClick" layoutX="14.0" layoutY="195.0" mnemonicParsing="false" prefWidth="172.0" text="Save Preferences" />
+  </children>
+  <stylesheets>
+    <URL value="@style.css" />
+  </stylesheets>
+</AnchorPane>

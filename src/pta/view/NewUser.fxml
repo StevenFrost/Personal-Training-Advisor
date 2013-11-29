@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?scenebuilder-stylesheet style.css?>
+
+<AnchorPane prefHeight="228.0" prefWidth="300.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="pta.controller.NewUserController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <Label layoutX="14.0" layoutY="14.0" text="New User">
+      <font>
+        <Font size="16.0" />
+      </font>
+    </Label>
+    <Label layoutX="14.0" layoutY="43.0" text="Username" />
+    <TextField fx:id="fxUsernameBox" layoutX="108.0" layoutY="40.0" prefWidth="178.0" />
+    <Label layoutX="14.0" layoutY="69.0" text="Password" />
+    <PasswordField fx:id="fxPasswordBox" layoutX="108.0" layoutY="66.0" prefWidth="178.0" />
+    <Label layoutX="14.0" layoutY="105.0" text="Forename" />
+    <TextField fx:id="fxForenameBox" layoutX="108.0" layoutY="102.0" prefWidth="178.0" />
+    <Label layoutX="14.0" layoutY="131.0" text="Surname" />
+    <TextField fx:id="fxSurnameBox" layoutX="108.0" layoutY="128.0" prefWidth="178.0" />
+    <Label layoutX="14.0" layoutY="157.0" text="Date of Birth" />
+    <TextField fx:id="fxDOBDayBox" layoutX="108.0" layoutY="154.0" prefWidth="58.0" />
+    <TextField fx:id="fxDOBMonthBox" layoutX="168.0" layoutY="154.0" prefWidth="58.0" />
+    <TextField fx:id="fxDOBYearBox" layoutX="228.0" layoutY="154.0" prefWidth="58.0" />
+    <Button onAction="#CreateAccountClick" layoutX="14.0" layoutY="192.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="272.0" text="Create User Account" />
+  </children>
+  <stylesheets>
+    <URL value="@style.css" />
+  </stylesheets>
+</AnchorPane>
